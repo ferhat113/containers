@@ -1,0 +1,9 @@
+services:
+  nginx:
+    image: nginx:latest
+    volumes:
+    - C:/Users/Ferhat/nginx-configuration:/tmp
+
+    ports:
+    - 8980:80
+    - 4943:443
