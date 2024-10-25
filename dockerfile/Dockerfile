@@ -9,5 +9,7 @@ RUN 	yum -y update && \
 	yum -y install bash nmap iproute && \
 	yum clean all
 
+EXPOSE 8080:8080
+
 ENTRYPOINT ["/usr/bin/nmap"]
 CMD ["-sn", "172.17.0.0/24"] 
